@@ -1,0 +1,46 @@
+
+.card-img-top{
+	height:180px;
+}
+
+
+.marque{
+	margin:1%;
+	background-color:black;
+	color: white;
+	
+}
+
+.navbar{
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+#login:hover{
+	background-color: green;
+	color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+	
+  text-align: center;
+  padding: 3px;
+  background-color:#CD853F;
+  color: white;
+
+}
+
+
