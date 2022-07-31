@@ -92,7 +92,7 @@ button:hover {
 	    <h1 class="text-center">Sign Up</h1>
 	    
 	    <c:if test="${signupstatus!=null }">
-	    	<p class="text-center">${signupstatus}</p>
+	    	<p class="text-center text-danger">${signupstatus}</p>
 	    </c:if>
 	    
 	    <p class="text-center">Please fill in this form to create an account.</p>

@@ -17,7 +17,7 @@ public class UserService {
 	public boolean addUser(User user) {
 		
 		boolean status=false;
-		List<User> userList = userRepo.findByusername(user.getUsername());
+		List<User> userList = search(user.getUsername());
 		
 		if(userList.isEmpty()) {
 			User u=userRepo.save(user);
@@ -31,9 +31,8 @@ public class UserService {
 	}
 	
 	public List<User> search(String username) {
-		List<User> list = userRepo.findByusername(username);
+		return userRepo.findByusername(username);
 		
-		return list;
 	}
 	
 	public User checkUserOrPass(String username,String password ) {
